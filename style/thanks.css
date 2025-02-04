@@ -1,0 +1,82 @@
+:root {
+    --cor-principal: #000;
+    --cor-secundaria: rgb(20, 20, 20);
+
+    --cor-texto-principal: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: var(--cor-secundaria);
+    border-radius: 25px;
+    padding: 2% 5% 2% 5%;
+    gap: 50px;
+}
+
+.b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.b-img {
+    width: 25%;
+}
+
+.d {
+    text-align: center;
+    color: var(--cor-texto-principal);
+    gap: 15px;  
+}
+
+
+.d-titulo {
+    font-family: "Play fair", serif;
+    font-size: 2.5rem;
+}
+
+.d-paragrafo {
+    font-family: "Play fair", serif;
+    font-size: 1.3rem;
+}
+
+.c-link {
+    text-decoration: none;
+}
+
+.c-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    background-color: rgb(120, 120, 120);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: "Play fair", serif;
+    font-size: 1.3rem;
+    transition: background-color 0.3s;
+}
+
+.c-botao:hover {
+    background-color: #FFC000;
+}
