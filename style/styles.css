@@ -8,7 +8,7 @@
     /* CORES DE FUNDO PADRÃO */
     --cor-de-fundo: #000000;
     --cor-de-fundo-secundaria: rgb(15, 15, 15);
-
+    --cor-de-fundo-secundaria-mobile: rgb(25, 25, 25);
 
     /* CORES DE FONTE PADRÃO */
     --cor-texto-primaria: #ffffff;
@@ -134,7 +134,7 @@ body {
     width: 86%;
     text-align: justify;
     color: var(--cor-texto-primaria);
-    background-color: var(--cor-de-fundo-secundaria);
+    background-color: var(--cor-de-fundo-secundaria-mobile);
     padding: 5% 3% 5% 3%;
     border-radius: 15px;
 }
@@ -148,7 +148,6 @@ body {
 .sobre-texto-paragrafo {
     font-size: var(--tamanho-texto-mobile);
     font-family: var(--fonte-primaria);
-    font-weight: 100;
 }
 
 
@@ -179,7 +178,7 @@ body {
 .topicos-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-de-fundo-secundaria);
+    background-color: var(--cor-de-fundo-secundaria-mobile);
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -269,7 +268,7 @@ body {
     border: 1px solid #555;
     border-radius: 5px;
     font-family: var(--fonte-texto);
-    background-color: var(--cor-de-fundo-secundaria);
+    background-color: var(--cor-de-fundo-secundaria-mobile);
     color: var(--cor-texto-primaria);
     transition: border-color 0.3s;
 }
@@ -300,7 +299,7 @@ body {
 /* ---------- FOOTER ------------------------ */
 
 footer {
-    background-color: var(--cor-de-fundo-secundaria);
+    background-color: var(--cor-de-fundo-secundaria-mobile);
     padding: 5% 0 5% 0;
 }
 
@@ -320,7 +319,7 @@ footer {
     align-items: center;
     gap: 2.5px;
     color: var(--cor-texto-primaria);
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .footer-links-anchor:hover {
