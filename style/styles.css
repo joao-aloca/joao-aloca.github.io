@@ -595,33 +595,70 @@ footer {
     /* ---------- FOOTER ------------------------ */
 
     footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
         background-color: var(--cor-de-fundo-secundaria);
+        padding: 5% 0 2% 0;
+        margin: 0;
+    }
+
+    .footer-texto-imagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        width: 40%;
+
+    }
+
+    .footer-imagem {
+        width: 40%;
+    }
+
+    .footer-texto {
+        text-align: center;
+        font-family: var(--fonte-titulo);
+        font-weight: 100;
+        font-size: 1.2rem;
     }
 
     .footer-links {
         color: var(--cor-texto-primaria);
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding: 2% 0 2% 0;
         list-style: none;
+        gap: 30%;
     }
 
-    .footer-links-anchor {
-        display: flex;
+    /* .footer-links-anchor {
+        /* display: flex;
+        flex-direction: row;
         align-items: center;
-        gap: 10px;
-        color: var(--cor-texto-primaria);
-        font-size: 1.1rem;
-    }
+        /* gap: 10px; */
+        /* color: var(--cor-texto-primaria); */
+        /* font-size: 1rem;
+    } */
 
     .footer-links-anchor:hover {
         cursor: pointer;
-        color: var(--cor-texto-secundaria);
+        /* color: var(--cor-texto-secundaria); */
     }
 
     .footer-links-anchor-image {
-        height: 1.2rem;
+        height: 1.5rem;
+    }
+
+    .footer-direitos {
+        font-family: var(--tamanho-texto);
+        font-size: .9rem;
+        padding: 2% 0 0 0;
+        color: rgb(193, 193, 193);
     }
 
 
