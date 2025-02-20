@@ -436,6 +436,7 @@ footer {
         margin: 0;
         gap: 0;
         /* background-color: lime; */
+        /* border-radius: 20px; */
     }
 
     .sobre-imagem {
@@ -563,10 +564,10 @@ footer {
 
     #contato {
         padding: 50px;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 5% 0;
-
+        background-color: rgb(240, 240, 240);
     }
 
     .contato-contatos {
@@ -575,16 +576,16 @@ footer {
     }
 
     .contato-contatos-titulo {
-        color: var(--cor-texto-primaria);
-        font-family: var(--fonte-padrao);
-        font-size: var(--tamanho-titulo);
+        color: #2d2c2c;
+        font-family: "Lora", serif;
+        font-size: 1.8rem;
         margin-bottom: 10px;
     }
 
-    .contato-contatos-texto {
+    /* .contato-contatos-texto {
         font-size: 1.2em;
         color: #ccc;
-    }
+    } */
 
     .contato-formulario {
         display: flex;
@@ -597,11 +598,11 @@ footer {
     .contato-formulario-input {
         padding: 3%;
         font-size: 1rem;
-        border: 1px solid #555;
+        border: 1px solid #757575;
         border-radius: 5px;
-        font-family: var(--fonte-padrao);
-        background-color: var(--cor-de-fundo-secundaria);
-        color: var(--cor-texto-primaria);
+        font-family: "Lora", serif;
+        background-color: white;
+        color: #2d2c2c;
         transition: border-color 0.3s;
     }
 
@@ -612,9 +613,10 @@ footer {
     .contato-formulario-input-botao {
         padding: 15px;
         font-size: 1em;
-        background-color: #222;
-        color: var(--cor-texto-primaria);
+        background-color: #2d2c2c;
+        color: #ebebeb;
         border: none;
+        border-color: #2d2c2c;
         border-radius: 5px;
         cursor: pointer;
     }
