@@ -43,29 +43,66 @@
 }
 
 
+/* ________________________________________________________________ */
+/* ---------------------------- MOBILE ---------------------------- */
+
 @media screen and (max-width: 767px) {
+
     body {
-        display: none;
+        /* overflow-x: hidden; */
+        /* width: 90dvw; */
+        background-color: var(--cor-de-fundo);
+        color: var(--cor-texto-primaria);
     }
+
+    .destaque {
+        color: var(--cor-texto-secundaria);
+    }
+
+
+    /* ------------------ CABEÇALHO ------------------ */
+
+    .cabecalho {
+        margin: 5% 0;
+        /* background-color: yellowgreen; */
+    }
+
+    .barra-navegacao-list {
+        display: flex;
+        justify-content: space-evenly;
+        /* gap: 5%; */
+        list-style-type: none;
+        /* background-color: crimson; */
+    }
+
+    .barra-navegacao-list-item {
+        text-decoration: none;
+        font-size: var(--tamanho-navbar-mobile);
+        font-family: var(--fonte-padrao);
+        /* background-color: #FFC000; */
+    }
+
+    .barra-navegacao-list-item-link {
+        color: var(--cor-texto-primaria);
+    }
+
+    .barra-navegacao-list-item-link:hover {
+        color: var(--cor-texto-secundaria);
+    }
+
 }
 
 
 
 
 
-/* 
-
---------------------------------------------------------------------------------------
-|                            T E L A S   M A I O R E S                                 |
----------------------------------------------------------------------------------------
-
-*/
-
+/* ________________________________________________________________ */
+/* --------------------------- MONITORES --------------------------- */
 
 @media screen and (min-width: 768px) {
     
     body {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         width: 100dvw;
         background-color: var(--cor-de-fundo);
         color: var(--cor-texto-primaria);
@@ -74,6 +111,8 @@
     .destaque {
         color: var(--cor-texto-secundaria);
     }
+
+    
 
 
     /* ------------- CABEÇALHO E NAVBAR ----------------*/
@@ -215,13 +254,101 @@
     /*-------------- SERVIÇOS ---------------------*/
 
     .servicos {
+        /* background-color: crimson; */
+        padding: 0 0 10% 0;
+    }
+
+    .servicos-titulo {
+        font-size: var(--tamanho-titulo);
+        font-family: var(--fonte-padrao);
+        text-align: center;
+        /* background-color: aqua; */
+        margin: 2% 5% 5% 5%;
+    }
+    
+    .topicos-container {
+        display: grid;
+        grid-row-end: auto;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+        gap: 4%;
+        /* background-color: lime; */
+    }
+    
+    .servicos-topico {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 5%; */
+        padding: 5% 3%;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+        gap: 20px;
+        border-color: #434343;
+        background-color: var(--cor-de-fundo-terciaria);
+    }
+
+    /* .servicos-topico:hover {
+        cursor: pointer;
+        border-style: solid;
+        border-color: var(--cor-texto-secundaria);
+        border-width: 2px;
+        background-color: crimson;
+    } */
+
+    .servicos-topico-icone {
+        max-height: 25%;
+        /* background-color: crimson; */
+    }
+
+    .servicos-topico-textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        min-height: 70%;
+        background-color: #434343;
+    }
+
+    .servicos-topico-textos-subtitulo {
+        font-family: var(--fonte-secundaria);
+        font-size: 1.2rem;
+        color: var(--cor-texto-secundaria);
+        text-align: center;
+        /* background-color: lightsalmon; */
+    }
+
+    .linha-sobre {
+        border: 0;
+        height: 1px;
+        width: 60%;
+        background-color: #ffffff;
+        padding: 0;
+        margin: 5% 0;
+    }
+
+
+    .servicos-topico-textos-explicacao {
+        font-size: 1rem;
+        font-family: var(--fonte-padrao);
+        color: var(--cor-texto-primaria);
+        text-align: center;
+        padding: 0 3%;
+        /* background-color: lime; */
+    }
+
+
+    /* .servicos {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-items: center;
         align-items: center;
         padding: 5% 0 5% 0;
-        /* background-color: crimson; */
+        background-color: crimson;
         margin: 0;
     }
 
@@ -237,12 +364,12 @@
     .topicos-container {
         display: flex;
         flex-direction: column;
-        background-color: var(--cor-de-fundo-secundaria);
+        background-color: var(--cor-de-fundo-terciaria);
         justify-content: center;
         justify-items: center;
         align-items: center;
         border-radius: 15px;
-        width: 70%;
+        width: 80%; 
     }
 
     .servicos-topico {
@@ -262,12 +389,13 @@
 
     .servicos-topico-textos {
         width: 80%;
-        margin: 3% 0 3% 0;
+        margin: 3% 0 5% 0;
     }
 
     .servicos-topico-textos-subtitulo {
         color: var(--cor-texto-secundaria);
         font-size: var(--tamanho-subtitulo);
+        margin-bottom: 10px;
     }
 
     .servicos-topico-textos-lista {
@@ -281,7 +409,7 @@
         font-weight: 100;
         padding-left: 15px;
         text-align: left;
-    }
+    } */
 
 
 
@@ -392,7 +520,7 @@
         text-align: center;
         font-family: var(--fonte-padrao);
         font-weight: 100;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         /* background-color: crimson; */
     }
 
